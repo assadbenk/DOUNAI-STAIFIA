@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الالتقاط</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-menu">
+            <h2>لعبة الالتقاط</h2>
+            <button id="start-button">ابدأ اللعبة</button>
+        </div>
+        <div id="player"></div>
+        <div id="object1"></div>
+        <div id="object2"></div>
+        <div id="score">النقاط: <span>0</span></div>
+        <div id="game-over-menu" class="hidden">
+            <h2>انتهت اللعبة!</h2>
+            <p>النقاط النهائية: <span id="final-score">0</span></p>
+            <button id="restart-button">إعادة اللعب</button>
+        </div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mpeg">
+        المتصفح لا يدعم تشغيل الصوت.
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
